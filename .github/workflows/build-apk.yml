@@ -15,6 +15,6 @@ jobs:
         run: |
           yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "build-tools;34.0.0" "platforms;android-30" >/dev/null
       - name: Build
-        run: BUILD_TOOLS=34.0.0 VERSION_CODE=$((1 + ${{ github.run_number }})) ./build.sh
+        run: BUILD_TOOLS=34.0.0 VERSION_CODE=$((1 + ${{ github.run_number }})) bash build.sh
       - uses: actions/upload-artifact@v4
         with: { name: LiveTV, path: build/LiveTV.apk }
