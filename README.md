@@ -1,6 +1,6 @@
 # Live TV (standalone)
 
-Just the Horizon Home Live TV guide as its own app: country / category / language / source
+Just the Live TV guide from Horizon Home as its own app: country / category / language / source
 filters, live preview, full-screen channel zapping, favourites. No home screen, no accessibility
 service, no extra permissions (only INTERNET + network state).
 
